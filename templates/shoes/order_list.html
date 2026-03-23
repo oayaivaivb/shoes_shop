@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}Список заказов{% endblock %}
+
+{% block content %}
+  <h1 class="mb-4">Заказы</h1>
+  {% if user.is_authenticated and user.profile.role == 'admin' %}
+    <a href="{% url 'shoes:order_create' %}" class="btn btn-accent mb-3">Добавить заказ</a>
+  {% endif %}
+  <div class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead class="table-dark">
+          <tr>
+           <th>№ заказа</th>
+           <th>Дата заказа</th>
+           <th>Дата доставки</th>
+           <th>Пункт выдачи</th>
+           <th>Клиент</th>
+           <th>Код получения</th>
+           <th>Статус</th>
+           {% if user.is_authenticated and user.profile.role == 'admin' %}
+             <th>Действия</th>
+           {% endif %}
+          </tr>
+      </thead>
+      <tbody>
+        {% for order in orders %}
+          <tr>
+            <td>{{ order.order_number }}</td>
+            <td>{{ order.order_date|date:"d.m.Y" }}</td>
+            <td>{{ order.delivery_date|date:"d.m.Y"|default:"—" }}</td>
+            <td>{{ order.pickup_point.address }}</td>
+            <td>{{ order.client.profile.full_name|default:order.client.username }}</td>
+            <td>{{ order.pickup_code }}</td>
+            <td>{{ order.get_status_display }}</td>
+           {% if user.is_authenticated and user.profile.role == 'admin' %}
+              <td>
+               <a href="{% url 'shoes:order_edit' order.pk %}" class="btn btn-sm btn-warning">Редактировать</a>
+               <a href="{% url 'shoes:order_delete' order.pk %}" class="btn btn-sm btn-danger">Удалить</a>
+              </td>
+           {% endif %}
+          </tr>
+        {% empty %}
+          <tr><td colspan="{% if user.is_authenticated and user.profile.role == 'admin' %}8{% else %}7{% endif %}" class="text-center">Заказов нет.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% if is_paginated %}
+    {% include 'includes/paginator.html' %}
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+    {% if object %}Редактирование товара{% else %}Добавление товара{% endif %}
+{% endblock %}
+{% block content %}
+    <h2>{% if object %}Редактирование{% else %}Добавление{% endif %} товара</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-accent">Сохранить</button>
+        <a href="{% url 'shoes:product_list' %}" class="btn btn-secondary">Отмена</a>
+    </form>
+{% endblock %}

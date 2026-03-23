@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Список товаров{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Каталог обуви</h1>
+    {% if user.is_authenticated and user.profile.role == 'admin' %}
+        <a href="{% url 'shoes:product_create' %}" class="btn btn-accent mb-3">Добавить товар</a>
+    {% endif %}
+    {% if user.is_authenticated and user.profile.role in 'admin,manager' %}
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <input type="text" id="search" class="form-control" placeholder="Поиск по названию, описанию, производителю, поставщику, категории" value="{{ current_q }}">
+            </div>
+            <div class="col-md-3">
+                <select id="sort" class="form-select">
+                    <option value="">Сортировка</option>
+                    <option value="quantity" {% if current_sort == 'quantity' %}selected{% endif %}>По количеству (возрастание)</option>
+                    <option value="-quantity" {% if current_sort == '-quantity' %}selected{% endif %}>По количеству (убывание)</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select id="supplier" class="form-select">
+                    <option value="all">Все поставщики</option>
+                    {% for sup in suppliers %}
+                        <option value="{{ sup.id }}" {% if current_supplier|stringformat:'s' == sup.id|stringformat:'s' %}selected{% endif %}>{{ sup.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <script>
+            function updatePage() {
+                const params = new URLSearchParams(window.location.search);
+                const search = document.getElementById('search').value;
+                const sort = document.getElementById('sort').value;
+                const supplier = document.getElementById('supplier').value;
+                if (search) params.set('q', search);
+                else params.delete('q');
+                if (sort) params.set('sort', sort);
+                else params.delete('sort');
+                if (supplier !== 'all') params.set('supplier', supplier);
+                else params.delete('supplier');
+                window.location.href = window.location.pathname + '?' + params.toString();
+            }
+            document.getElementById('search').addEventListener('input', updatePage);
+            document.getElementById('sort').addEventListener('change', updatePage);
+            document.getElementById('supplier').addEventListener('change', updatePage);
+        </script>
+    {% endif %}
+
+    <div class="row">
+        {% for product in products %}
+            <div class="col-md-4 col-lg-3 mb-4">
+                {% include 'includes/product_card.html' with product=product %}
+            </div>
+        {% empty %}
+            <div class="col-12">
+                <p class="text-center">Товары не найдены.</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

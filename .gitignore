@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+
+# Django
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+
+# Media files (product images) – keep only .gitkeep
+media/products/*
+!media/products/.gitkeep
+
+# Project temporary files
+initial_data.json
+er_diagram.dot
+er_diagram.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~

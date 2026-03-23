@@ -1,0 +1,25 @@
+{% load static %}
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'shoes:product_list' %}">
+        <img src="{% static 'img/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+        Обувной магазин
+      </a>
+      <div class="ms-auto">
+        {% if user.is_authenticated %}
+          <span class="navbar-text me-2">{{ user.profile.full_name|default:user.username }}</span>
+          {% if user.profile.role in 'admin,manager' %}
+            <a href="{% url 'shoes:order_list' %}" class="btn btn-outline-secondary btn-sm me-2">Заказы</a>
+          {% endif %}
+          <form method="post" action="{% url 'logout' %}" class="d-inline">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-outline-danger btn-sm">Выйти</button>
+          </form>
+        {% else %}
+          <a href="{% url 'login' %}" class="btn btn-outline-primary btn-sm">Войти</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+</header>

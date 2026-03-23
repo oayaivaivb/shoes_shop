@@ -1,0 +1,70 @@
+{% load static %}
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'img/Icon.ico' %}" type="image">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/fav/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/fav/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/fav/favicon-16x16.png' %}">
+    <title>{% block title %}Обувной магазин{% endblock %}</title>
+    {% bootstrap_css %}
+    <style>
+        /* Шрифт по ТЗ */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Дополнительный фон для шапки */
+        .navbar {
+            background-color: #7FFF00 !important;
+        }
+        /* Акцентный цвет для кнопок */
+        .btn-accent {
+            background-color: #00FA9A;
+            border-color: #00FA9A;
+            color: #000;
+        }
+        .btn-accent:hover {
+            background-color: #00e68a;
+            border-color: #00e68a;
+            color: #000;
+        }
+        /* Прижать футер к низу */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    {% include "includes/header.html" %}
+    <main>
+        <div class="container py-4">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+    {% include "includes/footer.html" %}
+    {% bootstrap_javascript %}
+</body>
+</html>

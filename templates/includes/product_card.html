@@ -1,0 +1,38 @@
+{% load static %}
+<div class="card h-100 
+    {% if product.quantity == 0 %}bg-info bg-opacity-25
+    {% elif product.discount > 15 %}bg-success text-white
+    {% endif %}">
+    <img src="
+        {% if product.image %}
+            {{ product.image.url }}
+        {% else %}
+            {% static 'img/picture.png' %}
+        {% endif %}"
+        class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
+    <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">
+            <strong>Категория:</strong> {{ product.category.name|default:"—" }}<br>
+            <strong>Производитель:</strong> {{ product.manufacturer.name|default:"—" }}<br>
+            <strong>Поставщик:</strong> {{ product.supplier.name|default:"—" }}<br>
+            <strong>Описание:</strong> {{ product.description|truncatechars:100 }}<br>
+            <strong>Остаток:</strong> {{ product.quantity }} {{ product.unit.name|default:"—" }}<br>
+            <strong>Скидка:</strong> {{ product.discount }}%
+        </p>
+        <div class="price">
+            {% if product.discount > 0 %}
+                <span class="text-decoration-line-through text-danger">{{ product.price|floatformat:2 }} руб.</span>
+                <span class="fw-bold ms-2">{{ product.final_price|floatformat:2 }} руб.</span>
+            {% else %}
+                <span class="fw-bold">{{ product.price|floatformat:2 }} руб.</span>
+            {% endif %}
+        </div>
+        {% if user.is_authenticated and user.profile.role == 'admin' %}
+            <div class="mt-2">
+                <a href="{% url 'shoes:product_edit' product.pk %}" class="btn btn-sm btn-warning">Редактировать</a>
+                <a href="{% url 'shoes:product_delete' product.pk %}" class="btn btn-sm btn-danger">Удалить</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
