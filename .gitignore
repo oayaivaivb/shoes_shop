@@ -22,7 +22,6 @@ media/products/*
 !media/products/.gitkeep
 
 # Project temporary files
-initial_data.json
 er_diagram.dot
 er_diagram.png
 
