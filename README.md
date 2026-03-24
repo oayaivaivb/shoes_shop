@@ -1,4 +1,3 @@
-```markdown
 # Обувной магазин (shoes_shop)
 
 [![Maintainability](https://qlty.sh/gh/oayaivaivb/projects/shoes_shop/maintainability.svg)](https://qlty.sh/gh/oayaivaivb/projects/shoes_shop)
@@ -79,9 +78,4 @@ shoes_shop/
 ├── manage.py
 ├── requirements.txt
 └── README.md
-```
-
-## Лицензия
-
-Учебный проект для демонстрационного экзамена.
 ```

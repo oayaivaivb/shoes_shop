@@ -1,0 +1,1313 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "94d5ous@gmail.com",
+      "email": "94d5ous@gmail.com",
+      "password": "pbkdf2_sha256$260000$rQhWkMY4sOHsdpNEPrEGsE$W3pPhT/nAyo6V77m5q8I8sZ3xVpEYcS/xhLdQfBzI6M=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": true
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "uth4iz@mail.com",
+      "email": "uth4iz@mail.com",
+      "password": "pbkdf2_sha256$260000$bCJwD4LWAgrCOhjqXLVX7V$b6E+4nTPFdXLQnzD0YCyZX+owL0pQK5z4a9qP/9iLrw=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "yzls62@outlook.com",
+      "email": "yzls62@outlook.com",
+      "password": "pbkdf2_sha256$260000$DHnKLHvMXgT4P2Lg3gMWlB$b5rIhFJQvLZ7Ww3S5tUcUyU/eFhg7R/0mJvWX8E6A=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "1diph5e@tutanota.com",
+      "email": "1diph5e@tutanota.com",
+      "password": "pbkdf2_sha256$260000$Q7PHIHM5kXTwPkqIx5W7Uo$7lJm5Z4aVqVw4rCx4+W0pFZ6X9p5B3tK9dA6tJvjUc=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "username": "tjde7c@yahoo.com",
+      "email": "tjde7c@yahoo.com",
+      "password": "pbkdf2_sha256$260000$cPwHnT9Qr3WpF5VjVfL4X6$uG1Z4cX8aE9yK5sQ0wG7lH2mN4bR3dF5gH6jK2lP=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "username": "wpmrc3do@tutanota.com",
+      "email": "wpmrc3do@tutanota.com",
+      "password": "pbkdf2_sha256$260000$fD4wA2tP6qY3hL9kM8pV7q$1aQwZ2xS3cD4fG5hJ6kL7zX8cV9bN0mP1oI2uY3tR=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "username": "5d4zbu@tutanota.com",
+      "email": "5d4zbu@tutanota.com",
+      "password": "pbkdf2_sha256$260000$qV8jX3eF6sL5oB1nM2pA9r$4yE8uG5wQ6zJ7kL0mN1oP2tY3uI4oP5aA6sD7fG8hJ=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "username": "ptec8ym@yahoo.com",
+      "email": "ptec8ym@yahoo.com",
+      "password": "pbkdf2_sha256$260000$rM7kL0nP2qS5uV8xZ1cF4g$9aB2cD3eF4gH5iJ6kL7mN8oP9qR0sT1uV2wX3yZ4aB5=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+      "username": "1qz4kw@mail.com",
+      "email": "1qz4kw@mail.com",
+      "password": "pbkdf2_sha256$260000$eW5xY7zA1bC3dE5fG7hJ9kL$0mN2oP4qR6sT8uV0wX2yZ4aB6cD8eF0gH2iJ4kL6mN=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+      "username": "4np6se@mail.com",
+      "email": "4np6se@mail.com",
+      "password": "pbkdf2_sha256$260000$gH9jK1mN3pQ5rS7tU9vW1xY$2zA4bC6dE8fG0hI2jK4lM6nO8pQ0rS2tU4vW6xY8zA=",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "full_name": "Никифорова Весения Николаевна",
+      "role": "admin"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "full_name": "Сазонов Руслан Германович",
+      "role": "admin"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "full_name": "Одинцов Серафим Артёмович",
+      "role": "admin"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "full_name": "Степанов Михаил Артёмович",
+      "role": "manager"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "full_name": "Ворсин Петр Евгеньевич",
+      "role": "manager"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "full_name": "Старикова Елена Павловна",
+      "role": "manager"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "full_name": "Михайлюк Анна Вячеславовна",
+      "role": "client"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "full_name": "Ситдикова Елена Анатольевна",
+      "role": "client"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "full_name": "Ворсин Петр Евгеньевич",
+      "role": "client"
+    }
+  },
+  {
+    "model": "shoes.profile",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "full_name": "Старикова Елена Павловна",
+      "role": "client"
+    }
+  },
+  {
+    "model": "shoes.category",
+    "pk": 1,
+    "fields": {
+      "name": "Женская обувь",
+      "slug": "zhenskaya-obuv"
+    }
+  },
+  {
+    "model": "shoes.category",
+    "pk": 2,
+    "fields": {
+      "name": "Мужская обувь",
+      "slug": "muzhskaya-obuv"
+    }
+  },
+  {
+    "model": "shoes.manufacturer",
+    "pk": 1,
+    "fields": { "name": "Kari" }
+  },
+  {
+    "model": "shoes.manufacturer",
+    "pk": 2,
+    "fields": { "name": "Marco Tozzi" }
+  },
+  {
+    "model": "shoes.manufacturer",
+    "pk": 3,
+    "fields": { "name": "Рос" }
+  },
+  {
+    "model": "shoes.manufacturer",
+    "pk": 4,
+    "fields": { "name": "Rieker" }
+  },
+  {
+    "model": "shoes.manufacturer",
+    "pk": 5,
+    "fields": { "name": "Alessio Nesca" }
+  },
+  {
+    "model": "shoes.manufacturer",
+    "pk": 6,
+    "fields": { "name": "CROSBY" }
+  },
+  {
+    "model": "shoes.supplier",
+    "pk": 1,
+    "fields": { "name": "Kari" }
+  },
+  {
+    "model": "shoes.supplier",
+    "pk": 2,
+    "fields": { "name": "Обувь для вас" }
+  },
+  {
+    "model": "shoes.unit",
+    "pk": 1,
+    "fields": { "name": "шт." }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 1,
+    "fields": { "address": "420151, г. Лесной, ул. Вишневая, 32" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 2,
+    "fields": { "address": "125061, г. Лесной, ул. Подгорная, 8" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 3,
+    "fields": { "address": "630370, г. Лесной, ул. Шоссейная, 24" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 4,
+    "fields": { "address": "400562, г. Лесной, ул. Зеленая, 32" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 5,
+    "fields": { "address": "614510, г. Лесной, ул. Маяковского, 47" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 6,
+    "fields": { "address": "410542, г. Лесной, ул. Светлая, 46" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 7,
+    "fields": { "address": "620839, г. Лесной, ул. Цветочная, 8" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 8,
+    "fields": { "address": "443890, г. Лесной, ул. Коммунистическая, 1" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 9,
+    "fields": { "address": "603379, г. Лесной, ул. Спортивная, 46" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 10,
+    "fields": { "address": "603721, г. Лесной, ул. Гоголя, 41" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 11,
+    "fields": { "address": "410172, г. Лесной, ул. Северная, 13" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 12,
+    "fields": { "address": "614611, г. Лесной, ул. Молодежная, 50" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 13,
+    "fields": { "address": "454311, г.Лесной, ул. Новая, 19" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 14,
+    "fields": { "address": "660007, г.Лесной, ул. Октябрьская, 19" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 15,
+    "fields": { "address": "603036, г. Лесной, ул. Садовая, 4" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 16,
+    "fields": { "address": "394060, г.Лесной, ул. Фрунзе, 43" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 17,
+    "fields": { "address": "410661, г. Лесной, ул. Школьная, 50" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 18,
+    "fields": { "address": "625590, г. Лесной, ул. Коммунистическая, 20" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 19,
+    "fields": { "address": "625683, г. Лесной, ул. 8 Марта" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 20,
+    "fields": { "address": "450983, г.Лесной, ул. Комсомольская, 26" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 21,
+    "fields": { "address": "394782, г. Лесной, ул. Чехова, 3" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 22,
+    "fields": { "address": "603002, г. Лесной, ул. Дзержинского, 28" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 23,
+    "fields": { "address": "450558, г. Лесной, ул. Набережная, 30" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 24,
+    "fields": { "address": "344288, г. Лесной, ул. Чехова, 1" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 25,
+    "fields": { "address": "614164, г.Лесной,  ул. Степная, 30" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 26,
+    "fields": { "address": "394242, г. Лесной, ул. Коммунистическая, 43" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 27,
+    "fields": { "address": "660540, г. Лесной, ул. Солнечная, 25" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 28,
+    "fields": { "address": "125837, г. Лесной, ул. Шоссейная, 40" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 29,
+    "fields": { "address": "125703, г. Лесной, ул. Партизанская, 49" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 30,
+    "fields": { "address": "625283, г. Лесной, ул. Победы, 46" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 31,
+    "fields": { "address": "614753, г. Лесной, ул. Полевая, 35" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 32,
+    "fields": { "address": "426030, г. Лесной, ул. Маяковского, 44" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 33,
+    "fields": { "address": "450375, г. Лесной ул. Клубная, 44" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 34,
+    "fields": { "address": "625560, г. Лесной, ул. Некрасова, 12" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 35,
+    "fields": { "address": "630201, г. Лесной, ул. Комсомольская, 17" }
+  },
+  {
+    "model": "shoes.pickuppoint",
+    "pk": 36,
+    "fields": { "address": "190949, г. Лесной, ул. Мичурина, 26" }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 1,
+    "fields": {
+      "article": "А112Т4",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 4990,
+      "supplier": 1,
+      "manufacturer": 1,
+      "category": 1,
+      "discount": 3,
+      "quantity": 6,
+      "description": "Женские Ботинки демисезонные kari",
+      "image": "products/1.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 2,
+    "fields": {
+      "article": "F635R4",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 3244,
+      "supplier": 2,
+      "manufacturer": 2,
+      "category": 1,
+      "discount": 2,
+      "quantity": 13,
+      "description": "Ботинки Marco Tozzi женские демисезонные, размер 39, цвет бежевый",
+      "image": "products/2.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 3,
+    "fields": {
+      "article": "H782T5",
+      "name": "Туфли",
+      "unit": 1,
+      "price": 4499,
+      "supplier": 1,
+      "manufacturer": 1,
+      "category": 2,
+      "discount": 4,
+      "quantity": 5,
+      "description": "Туфли kari мужские классика MYZ21AW-450A, размер 43, цвет: черный",
+      "image": "products/3.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 4,
+    "fields": {
+      "article": "G783F5",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 5900,
+      "supplier": 1,
+      "manufacturer": 3,
+      "category": 2,
+      "discount": 2,
+      "quantity": 8,
+      "description": "Мужские ботинки Рос-Обувь кожаные с натуральным мехом",
+      "image": "products/4.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 5,
+    "fields": {
+      "article": "J384T6",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 3800,
+      "supplier": 2,
+      "manufacturer": 4,
+      "category": 2,
+      "discount": 2,
+      "quantity": 16,
+      "description": "B3430/14 Полуботинки мужские Rieker",
+      "image": "products/5.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 6,
+    "fields": {
+      "article": "D572U8",
+      "name": "Кроссовки",
+      "unit": 1,
+      "price": 4100,
+      "supplier": 2,
+      "manufacturer": 3,
+      "category": 2,
+      "discount": 3,
+      "quantity": 6,
+      "description": "129615-4 Кроссовки мужские",
+      "image": "products/6.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 7,
+    "fields": {
+      "article": "F572H7",
+      "name": "Туфли",
+      "unit": 1,
+      "price": 2700,
+      "supplier": 1,
+      "manufacturer": 2,
+      "category": 1,
+      "discount": 2,
+      "quantity": 14,
+      "description": "Туфли Marco Tozzi женские летние, размер 39, цвет черный",
+      "image": "products/7.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 8,
+    "fields": {
+      "article": "D329H3",
+      "name": "Полуботинки",
+      "unit": 1,
+      "price": 1890,
+      "supplier": 2,
+      "manufacturer": 5,
+      "category": 1,
+      "discount": 4,
+      "quantity": 4,
+      "description": "Полуботинки Alessio Nesca женские 3-30797-47, размер 37, цвет: бордовый",
+      "image": "products/8.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 9,
+    "fields": {
+      "article": "B320R5",
+      "name": "Туфли",
+      "unit": 1,
+      "price": 4300,
+      "supplier": 1,
+      "manufacturer": 4,
+      "category": 1,
+      "discount": 2,
+      "quantity": 6,
+      "description": "Туфли Rieker женские демисезонные, размер 41, цвет коричневый",
+      "image": "products/9.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 10,
+    "fields": {
+      "article": "G432E4",
+      "name": "Туфли",
+      "unit": 1,
+      "price": 2800,
+      "supplier": 1,
+      "manufacturer": 1,
+      "category": 1,
+      "discount": 3,
+      "quantity": 15,
+      "description": "Туфли kari женские TR-YR-413017, размер 37, цвет: черный",
+      "image": "products/10.jpg"
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 11,
+    "fields": {
+      "article": "S213E3",
+      "name": "Полуботинки",
+      "unit": 1,
+      "price": 2156,
+      "supplier": 2,
+      "manufacturer": 6,
+      "category": 2,
+      "discount": 3,
+      "quantity": 6,
+      "description": "407700/01-01 Полуботинки мужские CROSBY",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 12,
+    "fields": {
+      "article": "E482R4",
+      "name": "Полуботинки",
+      "unit": 1,
+      "price": 1800,
+      "supplier": 1,
+      "manufacturer": 1,
+      "category": 1,
+      "discount": 2,
+      "quantity": 14,
+      "description": "Полуботинки kari женские MYZ20S-149, размер 41, цвет: черный",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 13,
+    "fields": {
+      "article": "S634B5",
+      "name": "Кеды",
+      "unit": 1,
+      "price": 5500,
+      "supplier": 2,
+      "manufacturer": 6,
+      "category": 2,
+      "discount": 3,
+      "quantity": 0,
+      "description": "Кеды Caprice мужские демисезонные, размер 42, цвет черный",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 14,
+    "fields": {
+      "article": "K345R4",
+      "name": "Полуботинки",
+      "unit": 1,
+      "price": 2100,
+      "supplier": 2,
+      "manufacturer": 6,
+      "category": 2,
+      "discount": 2,
+      "quantity": 3,
+      "description": "407700/01-02 Полуботинки мужские CROSBY",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 15,
+    "fields": {
+      "article": "O754F4",
+      "name": "Туфли",
+      "unit": 1,
+      "price": 5400,
+      "supplier": 2,
+      "manufacturer": 4,
+      "category": 1,
+      "discount": 4,
+      "quantity": 18,
+      "description": "Туфли женские демисезонные Rieker артикул 55073-68/37",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 16,
+    "fields": {
+      "article": "G531F4",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 6600,
+      "supplier": 1,
+      "manufacturer": 1,
+      "category": 1,
+      "discount": 12,
+      "quantity": 9,
+      "description": "Ботинки женские зимние ROMER арт. 893167-01 Черный",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 17,
+    "fields": {
+      "article": "J542F5",
+      "name": "Тапочки",
+      "unit": 1,
+      "price": 500,
+      "supplier": 1,
+      "manufacturer": 1,
+      "category": 2,
+      "discount": 13,
+      "quantity": 0,
+      "description": "Тапочки мужские Арт.70701-55-67син р.41",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 18,
+    "fields": {
+      "article": "B431R5",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 2700,
+      "supplier": 2,
+      "manufacturer": 4,
+      "category": 2,
+      "discount": 2,
+      "quantity": 5,
+      "description": "Мужские кожаные ботинки/мужские ботинки",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 19,
+    "fields": {
+      "article": "P764G4",
+      "name": "Туфли",
+      "unit": 1,
+      "price": 6800,
+      "supplier": 1,
+      "manufacturer": 6,
+      "category": 1,
+      "discount": 15,
+      "quantity": 15,
+      "description": "Туфли женские, ARGO, размер 38",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 20,
+    "fields": {
+      "article": "C436G5",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 10200,
+      "supplier": 1,
+      "manufacturer": 5,
+      "category": 1,
+      "discount": 15,
+      "quantity": 9,
+      "description": "Ботинки женские, ARGO, размер 40",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 21,
+    "fields": {
+      "article": "F427R5",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 11800,
+      "supplier": 2,
+      "manufacturer": 4,
+      "category": 1,
+      "discount": 15,
+      "quantity": 11,
+      "description": "Ботинки на молнии с декоративной пряжкой FRAU",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 22,
+    "fields": {
+      "article": "N457T5",
+      "name": "Полуботинки",
+      "unit": 1,
+      "price": 4600,
+      "supplier": 1,
+      "manufacturer": 6,
+      "category": 1,
+      "discount": 3,
+      "quantity": 13,
+      "description": "Полуботинки Ботинки черные зимние, мех",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 23,
+    "fields": {
+      "article": "D364R4",
+      "name": "Туфли",
+      "unit": 1,
+      "price": 12400,
+      "supplier": 1,
+      "manufacturer": 1,
+      "category": 1,
+      "discount": 16,
+      "quantity": 5,
+      "description": "Туфли Luiza Belly женские Kate-lazo черные из натуральной замши",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 24,
+    "fields": {
+      "article": "S326R5",
+      "name": "Тапочки",
+      "unit": 1,
+      "price": 9900,
+      "supplier": 2,
+      "manufacturer": 6,
+      "category": 2,
+      "discount": 17,
+      "quantity": 15,
+      "description": "Мужские кожаные тапочки \"Профиль С.Дали\"",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 25,
+    "fields": {
+      "article": "L754R4",
+      "name": "Полуботинки",
+      "unit": 1,
+      "price": 1700,
+      "supplier": 1,
+      "manufacturer": 1,
+      "category": 1,
+      "discount": 2,
+      "quantity": 7,
+      "description": "Полуботинки kari женские WB2020SS-26, размер 38, цвет: черный",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 26,
+    "fields": {
+      "article": "M542T5",
+      "name": "Кроссовки",
+      "unit": 1,
+      "price": 2800,
+      "supplier": 2,
+      "manufacturer": 4,
+      "category": 2,
+      "discount": 18,
+      "quantity": 3,
+      "description": "Кроссовки мужские TOFA",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 27,
+    "fields": {
+      "article": "D268G5",
+      "name": "Туфли",
+      "unit": 1,
+      "price": 4399,
+      "supplier": 2,
+      "manufacturer": 4,
+      "category": 1,
+      "discount": 3,
+      "quantity": 12,
+      "description": "Туфли Rieker женские демисезонные, размер 36, цвет коричневый",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 28,
+    "fields": {
+      "article": "T324F5",
+      "name": "Сапоги",
+      "unit": 1,
+      "price": 4699,
+      "supplier": 1,
+      "manufacturer": 6,
+      "category": 1,
+      "discount": 2,
+      "quantity": 5,
+      "description": "Сапоги замша Цвет: синий",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 29,
+    "fields": {
+      "article": "K358H6",
+      "name": "Тапочки",
+      "unit": 1,
+      "price": 599,
+      "supplier": 1,
+      "manufacturer": 4,
+      "category": 2,
+      "discount": 20,
+      "quantity": 2,
+      "description": "Тапочки мужские син р.41",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.product",
+    "pk": 30,
+    "fields": {
+      "article": "H535R5",
+      "name": "Ботинки",
+      "unit": 1,
+      "price": 2300,
+      "supplier": 2,
+      "manufacturer": 4,
+      "category": 1,
+      "discount": 2,
+      "quantity": 7,
+      "description": "Женские Ботинки демисезонные",
+      "image": ""
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 1,
+    "fields": {
+      "order_number": "1",
+      "order_date": "2025-02-27",
+      "delivery_date": "2025-04-20",
+      "pickup_point": 1,
+      "client": 4,
+      "pickup_code": "901",
+      "status": "completed"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 2,
+    "fields": {
+      "order_number": "2",
+      "order_date": "2022-09-28",
+      "delivery_date": "2025-04-21",
+      "pickup_point": 11,
+      "client": 1,
+      "pickup_code": "902",
+      "status": "completed"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 3,
+    "fields": {
+      "order_number": "3",
+      "order_date": "2025-03-21",
+      "delivery_date": "2025-04-22",
+      "pickup_point": 2,
+      "client": 2,
+      "pickup_code": "903",
+      "status": "completed"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 4,
+    "fields": {
+      "order_number": "4",
+      "order_date": "2025-02-20",
+      "delivery_date": "2025-04-23",
+      "pickup_point": 11,
+      "client": 3,
+      "pickup_code": "904",
+      "status": "completed"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 5,
+    "fields": {
+      "order_number": "5",
+      "order_date": "2025-03-17",
+      "delivery_date": "2025-04-24",
+      "pickup_point": 2,
+      "client": 4,
+      "pickup_code": "905",
+      "status": "completed"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 6,
+    "fields": {
+      "order_number": "6",
+      "order_date": "2025-03-01",
+      "delivery_date": "2025-04-25",
+      "pickup_point": 15,
+      "client": 1,
+      "pickup_code": "906",
+      "status": "completed"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 7,
+    "fields": {
+      "order_number": "7",
+      "order_date": "2025-03-30",
+      "delivery_date": "2025-04-26",
+      "pickup_point": 3,
+      "client": 2,
+      "pickup_code": "907",
+      "status": "completed"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 8,
+    "fields": {
+      "order_number": "8",
+      "order_date": "2025-03-31",
+      "delivery_date": "2025-04-27",
+      "pickup_point": 19,
+      "client": 3,
+      "pickup_code": "908",
+      "status": "new"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 9,
+    "fields": {
+      "order_number": "9",
+      "order_date": "2025-04-02",
+      "delivery_date": "2025-04-28",
+      "pickup_point": 5,
+      "client": 4,
+      "pickup_code": "909",
+      "status": "new"
+    }
+  },
+  {
+    "model": "shoes.order",
+    "pk": 10,
+    "fields": {
+      "order_number": "10",
+      "order_date": "2025-04-03",
+      "delivery_date": "2025-04-29",
+      "pickup_point": 19,
+      "client": 4,
+      "pickup_code": "910",
+      "status": "new"
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 1,
+    "fields": {
+      "order": 1,
+      "product": 1,
+      "quantity": 2,
+      "price": 4837.3
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 2,
+    "fields": {
+      "order": 1,
+      "product": 2,
+      "quantity": 2,
+      "price": 3179.12
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 3,
+    "fields": {
+      "order": 2,
+      "product": 3,
+      "quantity": 1,
+      "price": 4319.04
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 4,
+    "fields": {
+      "order": 2,
+      "product": 4,
+      "quantity": 1,
+      "price": 5782
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 5,
+    "fields": {
+      "order": 3,
+      "product": 5,
+      "quantity": 10,
+      "price": 3724
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 6,
+    "fields": {
+      "order": 3,
+      "product": 6,
+      "quantity": 10,
+      "price": 3977
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 7,
+    "fields": {
+      "order": 4,
+      "product": 7,
+      "quantity": 5,
+      "price": 2646
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 8,
+    "fields": {
+      "order": 4,
+      "product": 8,
+      "quantity": 4,
+      "price": 1814.4
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 9,
+    "fields": {
+      "order": 5,
+      "product": 1,
+      "quantity": 2,
+      "price": 4837.3
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 10,
+    "fields": {
+      "order": 5,
+      "product": 2,
+      "quantity": 2,
+      "price": 3179.12
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 11,
+    "fields": {
+      "order": 6,
+      "product": 3,
+      "quantity": 1,
+      "price": 4319.04
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 12,
+    "fields": {
+      "order": 6,
+      "product": 4,
+      "quantity": 1,
+      "price": 5782
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 13,
+    "fields": {
+      "order": 7,
+      "product": 5,
+      "quantity": 10,
+      "price": 3724
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 14,
+    "fields": {
+      "order": 7,
+      "product": 6,
+      "quantity": 10,
+      "price": 3977
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 15,
+    "fields": {
+      "order": 8,
+      "product": 7,
+      "quantity": 5,
+      "price": 2646
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 16,
+    "fields": {
+      "order": 8,
+      "product": 8,
+      "quantity": 4,
+      "price": 1814.4
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 17,
+    "fields": {
+      "order": 9,
+      "product": 9,
+      "quantity": 5,
+      "price": 4214
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 18,
+    "fields": {
+      "order": 9,
+      "product": 10,
+      "quantity": 1,
+      "price": 2716
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 19,
+    "fields": {
+      "order": 10,
+      "product": 11,
+      "quantity": 5,
+      "price": 2091.32
+    }
+  },
+  {
+    "model": "shoes.orderitem",
+    "pk": 20,
+    "fields": {
+      "order": 10,
+      "product": 12,
+      "quantity": 5,
+      "price": 1764
+    }
+  }
+]
