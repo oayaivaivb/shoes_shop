@@ -3,36 +3,75 @@
     {% if product.quantity == 0 %}bg-info bg-opacity-25
     {% elif product.discount > 15 %}bg-success text-white
     {% endif %}">
-    <img src="
-        {% if product.image %}
-            {{ product.image.url }}
-        {% else %}
-            {% static 'img/picture.png' %}
-        {% endif %}"
-        class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
-    <div class="card-body">
-        <h5 class="card-title">{{ product.name }}</h5>
-        <p class="card-text">
-            <strong>Категория:</strong> {{ product.category.name|default:"—" }}<br>
-            <strong>Производитель:</strong> {{ product.manufacturer.name|default:"—" }}<br>
-            <strong>Поставщик:</strong> {{ product.supplier.name|default:"—" }}<br>
-            <strong>Описание:</strong> {{ product.description|truncatechars:100 }}<br>
-            <strong>Остаток:</strong> {{ product.quantity }} {{ product.unit.name|default:"—" }}<br>
-            <strong>Скидка:</strong> {{ product.discount }}%
-        </p>
-        <div class="price">
-            {% if product.discount > 0 %}
-                <span class="text-decoration-line-through text-danger">{{ product.price|floatformat:2 }} руб.</span>
-                <span class="fw-bold ms-2">{{ product.final_price|floatformat:2 }} руб.</span>
-            {% else %}
-                <span class="fw-bold">{{ product.price|floatformat:2 }} руб.</span>
-            {% endif %}
+    <div class="row g-0 h-100">
+        <!-- Колонка 1: фото -->
+        <div class="col-md-4">
+            <img src="
+                {% if product.image %}
+                    {{ product.image.url }}
+                {% else %}
+                    {% static 'img/picture.png' %}
+                {% endif %}"
+                class="img-fluid rounded-start h-100 w-100" alt="{{ product.name }}"
+                style="object-fit: cover; min-height: 200px;">
         </div>
-        {% if user.is_authenticated and user.profile.role == 'admin' %}
-            <div class="mt-2">
-                <a href="{% url 'shoes:product_edit' product.pk %}" class="btn btn-sm btn-warning">Редактировать</a>
-                <a href="{% url 'shoes:product_delete' product.pk %}" class="btn btn-sm btn-danger">Удалить</a>
+
+        <!-- Колонка 2: поля (строго по порядку из JSON) -->
+        <div class="col-md-6">
+            <div class="card-body">
+                <!-- строка 1: Категория | Наименование -->
+                <div class="mb-2">
+                    <strong>Категория товара:</strong> {{ product.category.name|default:"—" }}
+                    <span class="mx-2">|</span>
+                    <strong>Наименование товара:</strong> {{ product.name }}
+                </div>
+                <!-- строка 2: Описание -->
+                <div class="mb-2">
+                    <strong>Описание товара:</strong> {{ product.description|default:"—" }}
+                </div>
+                <!-- строка 3: Производитель -->
+                <div class="mb-2">
+                    <strong>Производитель:</strong> {{ product.manufacturer.name|default:"—" }}
+                </div>
+                <!-- строка 4: Поставщик -->
+                <div class="mb-2">
+                    <strong>Поставщик:</strong> {{ product.supplier.name|default:"—" }}
+                </div>
+                <!-- строка 5: Цена (с перечёркиванием при скидке) -->
+                <div class="mb-2">
+                    <strong>Цена:</strong>
+                    {% if product.discount > 0 %}
+                        <span class="text-decoration-line-through text-danger">{{ product.price|floatformat:2 }} руб.</span>
+                        <span class="fw-bold ms-2">{{ product.final_price|floatformat:2 }} руб.</span>
+                    {% else %}
+                        <span class="fw-bold">{{ product.price|floatformat:2 }} руб.</span>
+                    {% endif %}
+                </div>
+                <!-- строка 6: Единица измерения -->
+                <div class="mb-2">
+                    <strong>Единица измерения:</strong> {{ product.unit.name|default:"—" }}
+                </div>
+                <!-- строка 7: Количество на складе -->
+                <div class="mb-2">
+                    <strong>Количество на складе:</strong> {{ product.quantity }} шт.
+                </div>
             </div>
-        {% endif %}
+        </div>
+
+        <!-- Колонка 3: действующая скидка -->
+        <div class="col-md-2">
+            <div class="card-body text-center">
+                <strong>Действующая скидка:</strong><br>
+                <span class="display-6">{{ product.discount }}%</span>
+            </div>
+        </div>
     </div>
+
+    <!-- Кнопки для администратора (редактирование/удаление) -->
+    {% if user.is_authenticated and user.profile.role == 'admin' %}
+        <div class="card-footer bg-transparent">
+            <a href="{% url 'shoes:product_edit' product.pk %}" class="btn btn-sm btn-warning">Редактировать</a>
+            <a href="{% url 'shoes:product_delete' product.pk %}" class="btn btn-sm btn-danger">Удалить</a>
+        </div>
+    {% endif %}
 </div>
